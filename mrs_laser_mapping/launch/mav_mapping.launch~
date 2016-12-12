@@ -4,7 +4,8 @@
   <arg name="rate" default="1.0"/>
   
   <param name="/use_sim_time" value="true" />
-
+  
+  <node pkg="rosbag" type="play" name="play" args="-r $(arg rate) --clock $(arg bagfile)" output="screen" respawn="false" />
   
   <node name="config_server" pkg="config_server" type="config_server" output="screen" required="false">
     <param name="config_path" value="$(find mrs_laser_mapping)/config" />

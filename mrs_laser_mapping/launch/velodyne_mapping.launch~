@@ -54,7 +54,7 @@
     <param name="map_downsampled_size" type="int" value="32" />
     <param name="map_downsampled_resolution" type="double" value="16.0" />
     <param name="map_downsampled_levels" type="int" value="4" />
-    <param name="map_downsampled_cell_capacity" type="int" value="500" />
+    <param name="map_downsampled_cell_capacity" type="int" value="100" />
 		
 		<!-- add scans when troso is rotated. Set to false if torso rotation results in artifacts. Default: true-->
 		<param name="add_scans_when_torso_rotated" type="bool" value="true" />

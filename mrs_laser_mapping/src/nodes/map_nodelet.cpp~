@@ -259,7 +259,7 @@ void MapNodelet::receivedCloud(const sensor_msgs::PointCloud2ConstPtr& msg)
     
     Eigen::Matrix4f eigen_transform;
     pcl_ros::transformAsMatrix (to_target, eigen_transform);
-    pcl::transformPointCloud (*pcl_cloud, *pcl_cloud, eigen_transform);
+    //pcl::transformPointCloud (*pcl_cloud, *pcl_cloud, eigen_transform);
 
     scan_buffer_.push_front(pcl_cloud);
   }
